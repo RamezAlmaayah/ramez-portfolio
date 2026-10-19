@@ -1,0 +1,62 @@
+/* Change these font tokens when a different approved font is supplied. */
+:root {
+  --font-body: 'Manrope Variable', Manrope, ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-body);
+  --font-mono: ui-monospace, SFMono-Regular, Consolas, monospace;
+  --color-navy: #0a2342;
+  --color-grey: #73858c;
+  --color-slate: #1c354b;
+  --color-white: #f5f7f8;
+  --color-pure-white: #ffffff;
+  --color-bg: #f5f7f8;
+  --color-surface: #edf1f3;
+  --color-card: #ffffff;
+  --color-text: #142536;
+  --color-muted: #526570;
+  --color-border: #d3dde2;
+  --color-tag: #e8edf0;
+  --color-focus: #2b6ca3;
+  --color-dark-text: #ffffff;
+  --color-dark-muted: #becdd7;
+  --color-dark-border: #425971;
+  --color-dark-surface: #102c48;
+  --color-project-bg: #091d33;
+  --color-art-light: #d9e4eb;
+  --color-art-line: #869fac;
+  --color-art-sand: #c7ac91;
+  --color-art-earth: #8eaba0;
+  --color-shadow: #0a234212;
+  --color-technology-hover: #edf3f6;
+  --color-technology-dark-hover: #243f58;
+  --max-width: 1120px;
+  --header-height: 72px;
+  --section-space: clamp(72px, 6vw, 96px);
+  --case-media-width: 800px;
+  --radius: 6px;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --transition: 250ms var(--ease-out);
+  --text-hero: clamp(2.5rem, 1.5rem + 2.6vw, 4.25rem);
+  --text-section: clamp(2rem, 1.25rem + 1.5vw, 2.75rem);
+  --text-project: clamp(1.5rem, 1.125rem + 1vw, 2rem);
+  --text-subheading: clamp(1.25rem, 1rem + 0.6vw, 1.5rem);
+  --text-body: clamp(1rem, 0.875rem + 0.2vw, 1.125rem);
+  --text-small: 1rem;
+  color-scheme: light;
+}
+:root[data-theme='dark'] {
+  --color-bg: #0d1e2e;
+  --color-surface: #122638;
+  --color-card: #182f42;
+  --color-text: #ffffff;
+  --color-muted: #b8c8d2;
+  --color-border: #3b5263;
+  --color-tag: #243c50;
+  --color-focus: #a8d4f5;
+  --color-technology-hover: #233d51;
+  color-scheme: dark;
+}
+@theme inline {
+  --font-sans: var(--font-body);
+  --color-french-navy: var(--color-navy);
+  --color-deep-slate: var(--color-slate);
+}

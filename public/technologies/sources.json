@@ -1,0 +1,325 @@
+[
+  {
+    "slug": "react",
+    "repository": "devicons/devicon",
+    "revision": "6a37858047b0e8d9c9c0e68f4a071fc410652e89",
+    "path": "icons/react/react-original.svg",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/react/react-original.svg",
+    "local": "/technologies/react.svg",
+    "sha256": "5825b649c8c04dec13ecf01d0182401bd0ec71789d2fa06224866d882cd1515f"
+  },
+  {
+    "slug": "csharp",
+    "repository": "devicons/devicon",
+    "revision": "6a37858047b0e8d9c9c0e68f4a071fc410652e89",
+    "path": "icons/csharp/csharp-original.svg",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/csharp/csharp-original.svg",
+    "local": "/technologies/csharp.svg",
+    "sha256": "7093478d0888e22a224b6fa832da6c9ffd14c433de8bd14aab0c1cb50925f3ee"
+  },
+  {
+    "slug": "dotnetcore",
+    "repository": "devicons/devicon",
+    "revision": "6a37858047b0e8d9c9c0e68f4a071fc410652e89",
+    "path": "icons/dotnetcore/dotnetcore-original.svg",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/dotnetcore/dotnetcore-original.svg",
+    "local": "/technologies/dotnetcore.svg",
+    "sha256": "b1b71d747aaf277a00efeab3f5f5844578fc4a42bb605f60c3b0510256009ca4"
+  },
+  {
+    "slug": "javascript",
+    "repository": "devicons/devicon",
+    "revision": "6a37858047b0e8d9c9c0e68f4a071fc410652e89",
+    "path": "icons/javascript/javascript-original.svg",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/javascript/javascript-original.svg",
+    "local": "/technologies/javascript.svg",
+    "sha256": "0656ff65fc8eeacda5c78d7f9ffe91ec1eb919db64f56e0b7dcd460af4bbd36c"
+  },
+  {
+    "slug": "html5",
+    "repository": "devicons/devicon",
+    "revision": "6a37858047b0e8d9c9c0e68f4a071fc410652e89",
+    "path": "icons/html5/html5-original.svg",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/html5/html5-original.svg",
+    "local": "/technologies/html5.svg",
+    "sha256": "34826e5b3315daadf4fa15f723a3c1d5ba4a89277bfd94e22ac4d7d3d54338c5"
+  },
+  {
+    "slug": "css3",
+    "repository": "devicons/devicon",
+    "revision": "6a37858047b0e8d9c9c0e68f4a071fc410652e89",
+    "path": "icons/css3/css3-original.svg",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/css3/css3-original.svg",
+    "local": "/technologies/css3.svg",
+    "sha256": "36b7d94b657d571d3f94042acbf6a4c86a5301a222f83f4b4583ad2acf6e297d"
+  },
+  {
+    "slug": "python",
+    "repository": "devicons/devicon",
+    "revision": "6a37858047b0e8d9c9c0e68f4a071fc410652e89",
+    "path": "icons/python/python-original.svg",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/python/python-original.svg",
+    "local": "/technologies/python.svg",
+    "sha256": "71493b4a732f0532b3a03a7a95da3ee11a65766367c8303b901ffbe7bf91a3a2"
+  },
+  {
+    "slug": "php",
+    "repository": "devicons/devicon",
+    "revision": "6a37858047b0e8d9c9c0e68f4a071fc410652e89",
+    "path": "icons/php/php-original.svg",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/php/php-original.svg",
+    "local": "/technologies/php.svg",
+    "sha256": "f22619a19c99a123e4678d71826f65f223721a739631dff46de39827c9ee0633"
+  },
+  {
+    "slug": "nodejs",
+    "repository": "devicons/devicon",
+    "revision": "6a37858047b0e8d9c9c0e68f4a071fc410652e89",
+    "path": "icons/nodejs/nodejs-original.svg",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/nodejs/nodejs-original.svg",
+    "local": "/technologies/nodejs.svg",
+    "sha256": "3218687c5ea24a4d4c0a33dc5c287da38c33a72dcfe9382469d7ce4e0bf661fb"
+  },
+  {
+    "slug": "mongodb",
+    "repository": "devicons/devicon",
+    "revision": "6a37858047b0e8d9c9c0e68f4a071fc410652e89",
+    "path": "icons/mongodb/mongodb-original.svg",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/mongodb/mongodb-original.svg",
+    "local": "/technologies/mongodb.svg",
+    "sha256": "d9f2bf7041264f4747e9969fb82ede0199c0ac97dfa8632aa0687d702ec05f7b"
+  },
+  {
+    "slug": "mysql",
+    "repository": "devicons/devicon",
+    "revision": "6a37858047b0e8d9c9c0e68f4a071fc410652e89",
+    "path": "icons/mysql/mysql-original.svg",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/mysql/mysql-original.svg",
+    "local": "/technologies/mysql.svg",
+    "sha256": "f73fa5d6b9da33fbf540ff96f5360c24b6d29d883ecfe6fcaecf89a8d3456067"
+  },
+  {
+    "slug": "microsoftsqlserver",
+    "repository": "devicons/devicon",
+    "revision": "6a37858047b0e8d9c9c0e68f4a071fc410652e89",
+    "path": "icons/microsoftsqlserver/microsoftsqlserver-original.svg",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/microsoftsqlserver/microsoftsqlserver-original.svg",
+    "local": "/technologies/microsoftsqlserver.svg",
+    "sha256": "f52b63cb5ff8c17efc079ae93eb7e2f1a04ca34eb736310c3576b19c0b9db21d"
+  },
+  {
+    "slug": "git",
+    "repository": "devicons/devicon",
+    "revision": "6a37858047b0e8d9c9c0e68f4a071fc410652e89",
+    "path": "icons/git/git-original.svg",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/git/git-original.svg",
+    "local": "/technologies/git.svg",
+    "sha256": "717a57ea97bf7e86de721dab3e68afac66332a10676d5c9abce4ae6a5a9c9983"
+  },
+  {
+    "slug": "github",
+    "repository": "devicons/devicon",
+    "revision": "6a37858047b0e8d9c9c0e68f4a071fc410652e89",
+    "path": "icons/github/github-original.svg",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/github/github-original.svg",
+    "local": "/technologies/github.svg",
+    "sha256": "45262793de6292206a895ed63593cdb1eaed82074173f7f4b5bdb3e427ca805a"
+  },
+  {
+    "slug": "visualstudio",
+    "repository": "devicons/devicon",
+    "revision": "6a37858047b0e8d9c9c0e68f4a071fc410652e89",
+    "path": "icons/visualstudio/visualstudio-original.svg",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/visualstudio/visualstudio-original.svg",
+    "local": "/technologies/visualstudio.svg",
+    "sha256": "82646b70fd41ee1ff3a751c1c773d1428bd776829ec4169203e67a15948d50ad"
+  },
+  {
+    "slug": "vscode",
+    "repository": "devicons/devicon",
+    "revision": "6a37858047b0e8d9c9c0e68f4a071fc410652e89",
+    "path": "icons/vscode/vscode-original.svg",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/vscode/vscode-original.svg",
+    "local": "/technologies/vscode.svg",
+    "sha256": "503d580c442a7071aae180d9b4766e312e4600bf0e9d842b30f56d0e614eceb8"
+  },
+  {
+    "slug": "firebase",
+    "repository": "devicons/devicon",
+    "revision": "6a37858047b0e8d9c9c0e68f4a071fc410652e89",
+    "path": "icons/firebase/firebase-original.svg",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/firebase/firebase-original.svg",
+    "local": "/technologies/firebase.svg",
+    "sha256": "6069e979418301117abe2223b62ffb9cedd8c5118fbd805da77170629eaef49c"
+  },
+  {
+    "slug": "figma",
+    "repository": "devicons/devicon",
+    "revision": "6a37858047b0e8d9c9c0e68f4a071fc410652e89",
+    "path": "icons/figma/figma-original.svg",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/figma/figma-original.svg",
+    "local": "/technologies/figma.svg",
+    "sha256": "d37c2bf1a1d4f10aeffb224e44da672cb8b9510f6e5a2e24b61758262995805e"
+  },
+  {
+    "slug": "postman",
+    "repository": "devicons/devicon",
+    "revision": "6a37858047b0e8d9c9c0e68f4a071fc410652e89",
+    "path": "icons/postman/postman-original.svg",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/postman/postman-original.svg",
+    "local": "/technologies/postman.svg",
+    "sha256": "0b366c7a023328b0d95e8c90d9050519b8c31d206f8b34db17742488f72efccb"
+  },
+  {
+    "slug": "tailwindcss",
+    "repository": "devicons/devicon",
+    "revision": "6a37858047b0e8d9c9c0e68f4a071fc410652e89",
+    "path": "icons/tailwindcss/tailwindcss-original.svg",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/tailwindcss/tailwindcss-original.svg",
+    "local": "/technologies/tailwindcss.svg",
+    "sha256": "f8cec54589553807eb603bcaf4e056aa090196211698b056542e3cc62a2f3448"
+  },
+  {
+    "slug": "typescript",
+    "repository": "devicons/devicon",
+    "revision": "6a37858047b0e8d9c9c0e68f4a071fc410652e89",
+    "path": "icons/typescript/typescript-original.svg",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/typescript/typescript-original.svg",
+    "local": "/technologies/typescript.svg",
+    "sha256": "c9191199f4049920c2fc19035b8a6664f37f4689fcd9e8434e786097e78863f0"
+  },
+  {
+    "slug": "angular",
+    "repository": "devicons/devicon",
+    "revision": "6a37858047b0e8d9c9c0e68f4a071fc410652e89",
+    "path": "icons/angular/angular-original.svg",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/angular/angular-original.svg",
+    "local": "/technologies/angular.svg",
+    "sha256": "9666f86466e1175ba5e0c685fb423123e93a544732fd7b241e92a192cbb613ab"
+  },
+  {
+    "slug": "bootstrap",
+    "repository": "devicons/devicon",
+    "revision": "6a37858047b0e8d9c9c0e68f4a071fc410652e89",
+    "path": "icons/bootstrap/bootstrap-original.svg",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/bootstrap/bootstrap-original.svg",
+    "local": "/technologies/bootstrap.svg",
+    "sha256": "016c324b3743e9be8dc2ca3a89bb5bd169d417f4f29fe5e731b16644abeb12cf"
+  },
+  {
+    "slug": "moodle",
+    "repository": "devicons/devicon",
+    "revision": "6a37858047b0e8d9c9c0e68f4a071fc410652e89",
+    "path": "icons/moodle/moodle-original.svg",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/moodle/moodle-original.svg",
+    "local": "/technologies/moodle.svg",
+    "sha256": "b00498c0faff39f8fca4ad08792afce8f83cc56f3ac7303576f3d5469db409e3"
+  },
+  {
+    "slug": "entityframeworkcore",
+    "repository": "devicons/devicon",
+    "revision": "6a37858047b0e8d9c9c0e68f4a071fc410652e89",
+    "path": "icons/entityframeworkcore/entityframeworkcore-original.svg",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/entityframeworkcore/entityframeworkcore-original.svg",
+    "local": "/technologies/entityframeworkcore.svg",
+    "sha256": "b3877f0b5ee88d14d2c9c5c55a4b5568c1fbd0ee12a0973aad1f6c1ca2f22ec0"
+  },
+  {
+    "slug": "leaflet",
+    "repository": "simple-icons/simple-icons",
+    "revision": "4d29a35c954699b389a834aacc97dd6e7e74143c",
+    "path": "icons/leaflet.svg",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/4d29a35c954699b389a834aacc97dd6e7e74143c/icons/leaflet.svg",
+    "local": "/technologies/leaflet.svg",
+    "sha256": "f70209b93011b4443f8a952eedb028d3d262f3d61c700980f6ed4db61267b56d"
+  },
+  {
+    "slug": "openstreetmap",
+    "repository": "simple-icons/simple-icons",
+    "revision": "4d29a35c954699b389a834aacc97dd6e7e74143c",
+    "path": "icons/openstreetmap.svg",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/4d29a35c954699b389a834aacc97dd6e7e74143c/icons/openstreetmap.svg",
+    "local": "/technologies/openstreetmap.svg",
+    "sha256": "10c2abae1298f240bbfb939986c2b21b87f56b5b4f53adcf0dc12cd4dc8fe417"
+  },
+  {
+    "slug": "supabase",
+    "repository": "devicons/devicon",
+    "revision": "6a37858047b0e8d9c9c0e68f4a071fc410652e89",
+    "path": "icons/supabase/supabase-original.svg",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/supabase/supabase-original.svg",
+    "local": "/technologies/supabase.svg",
+    "sha256": "bb8d502577de5e864437542bc2655b5d4d4782589386fc4583d912f46ac73181"
+  },
+  {
+    "slug": "docker",
+    "repository": "devicons/devicon",
+    "revision": "6a37858047b0e8d9c9c0e68f4a071fc410652e89",
+    "path": "icons/docker/docker-original.svg",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/docker/docker-original.svg",
+    "local": "/technologies/docker.svg",
+    "sha256": "3fd830ea69431ed7a0b8d068cd5b34ad3f00a1a78195d50f13ff56713f2462e1"
+  },
+  {
+    "slug": "vite",
+    "repository": "devicons/devicon",
+    "revision": "6a37858047b0e8d9c9c0e68f4a071fc410652e89",
+    "path": "icons/vitejs/vitejs-original.svg",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/vitejs/vitejs-original.svg",
+    "local": "/technologies/vite.svg",
+    "sha256": "f84e50febcb3a2a81399c9a1ae76d96dc235428202f91610b6f36bfb5b62051a"
+  },
+  {
+    "slug": "swagger",
+    "repository": "devicons/devicon",
+    "revision": "6a37858047b0e8d9c9c0e68f4a071fc410652e89",
+    "path": "icons/swagger/swagger-original.svg",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/swagger/swagger-original.svg",
+    "local": "/technologies/swagger.svg",
+    "sha256": "131cccbc020a496396df7856b7737f09fbe27e970dbd03e90401f4b86e408835"
+  },
+  {
+    "slug": "jira",
+    "repository": "devicons/devicon",
+    "revision": "6a37858047b0e8d9c9c0e68f4a071fc410652e89",
+    "path": "icons/jira/jira-original.svg",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/jira/jira-original.svg",
+    "local": "/technologies/jira.svg",
+    "sha256": "e5010dd0056d130e32fa3d0dc589aa1288370b525b4123658ea6eb90f53ca1db"
+  },
+  {
+    "slug": "postgresql",
+    "repository": "devicons/devicon",
+    "revision": "6a37858047b0e8d9c9c0e68f4a071fc410652e89",
+    "path": "icons/postgresql/postgresql-original.svg",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/postgresql/postgresql-original.svg",
+    "local": "/technologies/postgresql.svg",
+    "sha256": "f220a436258ed014c512ba4f9c0de6b9e5c2c4b55331a0a29f8c7a1a12c36443"
+  },
+  {
+    "slug": "reactrouter",
+    "repository": "devicons/devicon",
+    "revision": "6a37858047b0e8d9c9c0e68f4a071fc410652e89",
+    "path": "icons/reactrouter/reactrouter-original.svg",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/reactrouter/reactrouter-original.svg",
+    "local": "/technologies/reactrouter.svg",
+    "sha256": "ecd8514e2fed625420125057a3e0e8cb84e7c528d3204efaebe8057d7f3b2d12"
+  },
+  {
+    "slug": "githubactions",
+    "repository": "devicons/devicon",
+    "revision": "6a37858047b0e8d9c9c0e68f4a071fc410652e89",
+    "path": "icons/githubactions/githubactions-original.svg",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/githubactions/githubactions-original.svg",
+    "local": "/technologies/githubactions.svg",
+    "sha256": "3a2524052ccf301d1a239f20cfef98d655e060c51cc29c5e94c867913899a47e"
+  },
+  {
+    "slug": "motion",
+    "repository": "motiondivision/motion",
+    "path": "Official logo linked from the installed motion package README.md",
+    "source": "https://github.com/user-attachments/assets/00d6d1c3-72c4-4c2f-a664-69da13182ffc",
+    "local": "/technologies/motion.png",
+    "sha256": "1dde9678a5a164dd4795453de76444f6ed09e349b468c661aae88d6ff693aa6e"
+  }
+]

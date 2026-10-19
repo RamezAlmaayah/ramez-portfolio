@@ -1,0 +1,21 @@
+{
+  "sourceName": "شعار هندسي مدمج بحرفي R وA.png",
+  "sourceSha256": "90547b36a0f49c7ee9222278cc83f4620a59cfcb89cd43bb8d1bbb74dff176e2",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "crop": [
+    146,
+    349,
+    1156,
+    927
+  ],
+  "outputSize": [
+    1010,
+    578
+  ],
+  "alphaSha256": "b1d626a8e270a425f296aa389212da214c24da2656c63a04f28f82558180a8c7",
+  "lightVariantHasIdenticalAlpha": true,
+  "method": "Crop original pixels with 2px edge margin; recolor RGB only for the light variant. No tracing, redrawing, or generative editing."
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 840" role="img"><title>Unseen Jo — illustrative Jordan-inspired sandstone landscape</title><style>:root{--navy:#0a2342;--slate:#1c354b;--grey:#73858c;--white:#f5f7f8;--line:#9eb3c1;--light:#d9e4eb;--sand:#c7ac91;--clay:#a9876d;--rock:#775d4a;--earth:#8eaba0;--field:#607e73}text{font-family:Arial,sans-serif} .navy{fill:var(--navy)}.light{fill:var(--light)}.white{fill:var(--white)}.stroke{stroke:var(--line);fill:none}</style>
+<rect width="1200" height="840" fill="var(--light)"/><circle cx="855" cy="200" r="88" fill="var(--white)"/>
+<path d="M0 410L120 345 193 420 303 256 388 348 485 220 561 324 670 254 735 349 833 265 972 410 1080 337 1200 412V840H0Z" fill="var(--sand)"/>
+<path d="M0 215L100 240 165 330 215 321 296 520 374 587 485 840H0Z" fill="var(--clay)"/>
+<path d="M1200 132L1116 186 1077 270 985 306 948 432 891 471 794 840H1200Z" fill="var(--rock)"/>
+<path d="M0 410L100 432 151 512 215 549 279 678 341 840H0Z" fill="var(--rock)"/><path d="M1200 385L1092 462 1051 560 1000 620 971 750 904 840H1200Z" fill="var(--clay)"/>
+<path d="M420 840C390 720 590 633 585 548C690 679 548 762 629 840" fill="var(--white)" opacity=".65"/>
+<g fill="none" stroke="var(--sand)" stroke-width="3" opacity=".5"><path d="M1160 253l-63 55-19 99-61 53-24 104"/><path d="M1149 416l-57 60-19 90-40 63"/><path d="M110 402l37 60 61 37 23 76"/></g>
+<text x="76" y="107" class="navy" font-size="26" letter-spacing="4">UNSEEN JO / A DIFFERENT WAY TO DISCOVER</text>
+<rect x="63" y="637" width="655" height="153" rx="3" fill="var(--navy)"/><text x="95" y="710" class="white" font-size="66" letter-spacing="-3">Discover Jordan.</text><text x="99" y="756" class="light" font-size="25">THROUGH YOUR OWN PERSPECTIVE.</text>
+</svg>

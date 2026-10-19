@@ -1,0 +1,76 @@
+import { expect, test } from '@playwright/test'
+import AxeBuilder from '@axe-core/playwright'
+
+test('Unseen Jo real screenshots, responsive thumbnails, swipe, and accessible lightbox', async ({ page }, info) => {
+  test.setTimeout(120000)
+  const errors: string[] = []
+  page.on('pageerror', (error) => errors.push(error.message))
+  await page.goto('/')
+  const cover = page.locator('.preview-unseen-jo img')
+  await cover.scrollIntoViewIfNeeded()
+  await expect(cover).toHaveAttribute('src', '/projects/unseen-jo/homepage.png')
+  await expect.poll(() => cover.evaluate((el: HTMLImageElement) => el.naturalWidth)).toBeGreaterThan(0)
+  await expect(cover).toHaveAttribute('srcset', /homepage-640.webp/)
+  await page.goto('/projects/unseen-jo')
+  const gallery = page.getByRole('region', { name: 'Unseen Jo screenshot gallery' })
+  await gallery.scrollIntoViewIfNeeded()
+  const titles = ['Homepage', 'Explore and Map', 'Surprise Me Preferences']
+  for (const width of [320, 375, 768, 1024, 1366, 1440, 1920]) {
+    await page.setViewportSize({ width, height: 900 })
+    for (const [index, title] of titles.entries()) {
+      await gallery.getByRole('button', { name: new RegExp(`^0${index + 1}\\s*${title}$`) }).click()
+      const image = gallery.locator('.gallery-stage img.is-active')
+      await image.evaluate((el: HTMLImageElement) => el.decode())
+      expect(await image.evaluate((el: HTMLImageElement) => Math.abs(el.width / el.height - el.naturalWidth / el.naturalHeight))).toBeLessThan(0.02)
+      await expect(gallery.locator('.gallery-stage figcaption strong')).toHaveText(title)
+    }
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true)
+  }
+  await page.setViewportSize({ width: info.project.name === 'mobile' ? 375 : 1366, height: 900 })
+  await gallery.getByRole('button', { name: /^01\s*Homepage$/ }).click()
+  await page.keyboard.press('ArrowRight')
+  await expect(gallery.locator('.gallery-stage figcaption strong')).toHaveText('Explore and Map')
+  const enlarge = gallery.locator('.gallery-enlarge')
+  await enlarge.dispatchEvent('touchstart', { touches: [{ identifier: 0, clientX: 250, clientY: 200 }] })
+  await enlarge.dispatchEvent('touchend', { changedTouches: [{ identifier: 0, clientX: 100, clientY: 205 }] })
+  await expect(gallery.locator('.gallery-stage figcaption strong')).toHaveText('Surprise Me Preferences')
+  await enlarge.click()
+  await expect(page.getByRole('dialog')).not.toBeVisible()
+  await enlarge.click()
+  const dialog = page.getByRole('dialog')
+  const close = dialog.getByRole('button', { name: 'Close screenshot viewer' })
+  await expect(close).toBeFocused()
+  await expect(dialog.locator('figcaption')).toContainText('fixed Figma sample')
+  await page.keyboard.press('Shift+Tab')
+  await expect(dialog.getByRole('button', { name: 'Next screenshot' })).toBeFocused()
+  await page.keyboard.press('Tab')
+  await expect(close).toBeFocused()
+  await page.keyboard.press('ArrowRight')
+  await expect(dialog.locator('figcaption strong')).toHaveText('Homepage')
+  await page.keyboard.press('ArrowLeft')
+  await expect(dialog.locator('figcaption strong')).toHaveText('Surprise Me Preferences')
+  await dialog.getByRole('button', { name: 'Previous screenshot' }).click()
+  await expect(dialog.locator('figcaption strong')).toHaveText('Explore and Map')
+  for (const theme of ['light', 'dark']) {
+    await page.evaluate((value) => document.documentElement.dataset.theme = value, theme)
+    expect((await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa']).analyze()).violations).toEqual([])
+    await dialog.screenshot({ path: `test-results/unseen-lightbox-${theme}-${info.project.name}.png` })
+  }
+  await page.keyboard.press('Escape')
+  await expect(dialog).not.toBeVisible()
+  await expect(enlarge).toBeFocused()
+  await enlarge.click()
+  await close.click()
+  await expect(dialog).not.toBeVisible()
+  for (const theme of ['light', 'dark']) {
+    await page.evaluate((value) => document.documentElement.dataset.theme = value, theme)
+    expect((await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa']).analyze()).violations).toEqual([])
+    await gallery.screenshot({ path: `test-results/unseen-gallery-${theme}-${info.project.name}.png` })
+  }
+  await page.emulateMedia({ reducedMotion: 'no-preference' })
+  await gallery.getByRole('button', { name: 'Next screenshot' }).click()
+  await expect(gallery.locator('.gallery-stage img.is-active')).toHaveCSS('transition-duration', '0.35s')
+  await page.emulateMedia({ reducedMotion: 'reduce' })
+  expect(await gallery.locator('.gallery-stage img.is-active').evaluate((el) => parseFloat(getComputedStyle(el).transitionDuration))).toBeLessThanOrEqual(0.001)
+  expect(errors).toEqual([])
+})

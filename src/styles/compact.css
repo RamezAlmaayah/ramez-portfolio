@@ -1,0 +1,158 @@
+/* Desktop density; narrow layouts retain their readable type and touch targets.
+   main.tsx loads this stylesheet after the base stylesheet. */
+@media (min-width: 900px) {
+  :root {
+    --header-height: 60px;
+    --section-space: clamp(48px, 4vw, 64px);
+    --case-media-width: 680px;
+    --text-hero: clamp(2.75rem, 2rem + 1vw, 3.25rem);
+    --text-section: clamp(1.75rem, 1.25rem + 1vw, 2.125rem);
+    --text-project: clamp(1.375rem, 1rem + 0.65vw, 1.625rem);
+    --text-subheading: clamp(1.125rem, 1rem + 0.25vw, 1.25rem);
+    --text-body: clamp(0.9375rem, 0.875rem + 0.1vw, 1rem);
+  }
+
+  .container { width: min(var(--max-width), calc(100% - 80px)); }
+  .header-inner { gap: 20px; }
+  .brand-name { font-size: 15px; }
+  .brand-name > span { font-size: 11px; }
+  .desktop-nav { gap: 20px; }
+  .desktop-nav a, .resume-nav { font-size: 14px; }
+  .desktop-nav a::after { bottom: 9px; }
+  .active-line { bottom: 8px; }
+  .header-actions { gap: 12px; }
+
+  .hero-main { grid-template-columns: 0.75fr 1.25fr; column-gap: 28px; row-gap: 20px; padding-block: 32px 24px; }
+  .hero h1 { font-size: var(--text-hero); max-width: 720px; margin-top: 14px; }
+  .hero .eyebrow { font-size: 12px; }
+  .hero-art { width: 244px; height: 200px; top: 24px; right: 0; }
+  .ring-one { width: 174px; height: 174px; }
+  .ring-two { width: 114px; height: 204px; left: 50px; }
+  .ring-three { width: 204px; height: 84px; top: 56px; }
+  .orbit-core { font-size: 54px; gap: 18px; padding-bottom: 22px; }
+  .orbit-core i { width: 11px; height: 11px; }
+  .art-coordinate { font-size: 10px; }
+  .hero-person > p { font-size: 20px; }
+  .hero-person-rule { margin-bottom: 12px; }
+  .hero-location { font-size: 14px; margin-top: 8px; }
+  .hero-description > p { font-size: var(--text-body); line-height: 1.65; }
+  .hero-actions { gap: 12px; margin-top: 16px; }
+  .hero-description .resume-note { font-size: 14px; margin-top: 10px; }
+  .hero-bottom { font-size: 14px; padding-block: 10px; }
+  .button { font-size: 14px; min-height: 40px; padding: 7px 14px; gap: 10px; }
+  .text-action { font-size: 14px; gap: 10px; }
+
+  .section, .contact-section { padding-block: var(--section-space); }
+  .section-heading { gap: 32px; margin-bottom: 30px; }
+  .section-heading .eyebrow { margin-bottom: 12px; }
+  .eyebrow { font-size: 12px; }
+  .section-description { font-size: 15px; line-height: 1.65; }
+  .about-grid, .about-foundations { gap: 40px; }
+  .aside-statement { font-size: 20px; margin-top: 20px; }
+  .about-copy { gap: 18px; }
+  .about-copy p { font-size: 16px; line-height: 1.7; }
+  .language-list { margin-top: 28px; padding-top: 18px; }
+  .about-foundations { margin-top: 32px; padding-top: 24px; }
+  .about-foundations h3 { margin-bottom: 16px; }
+  .focus-list { gap: 10px; }
+  .focus-list li, .strength-list { font-size: 15px; }
+  .strength-list { gap: 10px 16px; }
+
+  .skills-grid { gap: 16px; }
+  .skill-card { padding: 18px; }
+  .skill-top { margin-bottom: 14px; }
+  .skill-top > span { font-size: 12px; }
+  .skill-card h3 { font-size: 18px; min-height: 48px; margin-bottom: 12px; }
+  .technology-badges, .technology-badges.project-stack, .technology-badges.technology-list { gap: 8px; }
+  .technology-badge { font-size: 14px; min-height: 40px; padding: 6px 9px; gap: 8px; }
+  .technology-logo { width: 34px; height: 34px; padding: 4px; }
+  .technology-logo img { width: 26px; height: 26px; }
+  .technology-badges--skill { gap: 8px; }
+  .technology-badge--skill { min-height: 64px; padding: 8px; gap: 8px; flex-direction: row; text-align: left; justify-content: flex-start; font-size: 14px; }
+  .technology-badge--skill .technology-logo { width: 40px; height: 40px; padding: 5px; }
+  .technology-badge--skill .technology-logo img { width: 30px; height: 30px; }
+  .technology-badge--skill.technology-badge--fallback { min-height: 48px; }
+  .architecture-flow .technology-badge { font-size: 14px; padding: 6px 8px; }
+
+  .projects-section .section-heading { margin-bottom: 32px; }
+  .project-collection { gap: 44px; }
+  .featured-project { grid-template-columns: 1fr 1.1fr; gap: 28px; }
+  .featured-project .project-preview { width: 100%; max-width: 480px; justify-self: center; }
+  .project-content h3, .additional-project h3 { font-size: var(--text-project); }
+  .project-kicker { font-size: 12px; margin-bottom: 12px; gap: 10px; }
+  .project-category { font-size: 14px; margin-bottom: 6px; }
+  .project-subtitle { font-size: 16px; margin-top: 8px; }
+  .project-description, .additional-project p, .gym-modules { font-size: var(--text-body); line-height: 1.65; }
+  .project-description { margin-top: 12px; }
+  .project-stack { margin-block: 14px 16px; }
+  .project-links { gap: 10px; margin-top: 14px; }
+  .project-preview figcaption { font-size: 12px; padding: 10px 12px; }
+  .additional-project { gap: 32px; margin-top: 44px; padding-top: 28px; }
+  .gym-modules { gap: 8px; }
+
+  .timeline-item { gap: 36px; padding: 0 0 32px 40px; }
+  .timeline-item h3 { font-size: 24px; }
+  .timeline-meta p { font-size: 15px; margin-top: 10px; }
+  .experience-role { font-size: 16px; margin-top: 6px; }
+  .timeline-item article > p:not(.experience-role) { font-size: 15px; margin-top: 14px; }
+  .responsibilities { font-size: 15px; gap: 6px; margin-top: 14px; }
+  .education-grid { gap: 36px; }
+  .education-card { padding: 24px; }
+  .education-card > svg { margin-bottom: 18px; }
+  .education-card .eyebrow { margin-bottom: 12px; }
+  .education-card h3 { font-size: 24px; }
+  .education-card > p:not(.eyebrow) { font-size: 16px; margin-top: 16px; }
+  .education-card > span, .training-item p { font-size: 15px; }
+  .training-list > h3 { font-size: 20px; margin-bottom: 12px; }
+  .training-item { padding-block: 14px; gap: 18px; }
+  .training-item h4 { font-size: 16px; }
+  .training-note { font-size: 14px; margin-top: 14px; }
+
+  .contact-grid { gap: 40px; }
+  .contact-section h2 { font-size: var(--text-section); margin-top: 18px; }
+  .contact-copy { font-size: 16px; line-height: 1.7; margin-top: 18px; }
+  .contact-actions { margin-top: 20px; }
+  .contact-row { font-size: 17px; padding-block: 18px; }
+  .contact-description { font-size: 15px; }
+  .footer-inner { padding-block: 24px; }
+  .footer-inner p, .footer-inner a { font-size: 14px; }
+
+  .case-hero { padding-top: 24px; }
+  .case-back { margin-bottom: 20px; }
+  .case-title-grid { gap: 40px; }
+  .case-hero h1 { font-size: var(--text-hero); margin-top: 12px; }
+  .case-subtitle { font-size: 18px; margin-top: 12px; }
+  .case-intro > p { font-size: 16px; }
+  .stage-notice { margin-top: 16px; }
+  .stage-notice > span:last-child { font-size: 14px; }
+  .case-facts { gap: 24px; margin-block: 24px; padding-block: 16px; }
+  .case-facts p { font-size: 15px; margin-top: 6px; }
+  .project-gallery { margin-top: 20px; }
+  .gallery-heading { margin-bottom: 12px; }
+  .gallery-stage .gallery-image-stack img { max-height: 476px; }
+  .gallery-figure figcaption { padding: 14px 18px; }
+  .gallery-figure figcaption strong { font-size: 16px; }
+  .gallery-figure figcaption span { font-size: 15px; }
+  .gallery-selectors { gap: 10px; margin-top: 12px; }
+  .gallery-selectors button { font-size: 14px; min-height: 40px; padding: 10px 14px; }
+  .case-body { padding-top: 44px; }
+  .case-problem-grid, .engineering-grid { gap: 40px; }
+  .case-body .eyebrow { margin-bottom: 14px; }
+  .case-body h2 { font-size: var(--text-section); }
+  .case-problem-grid p:not(.eyebrow), .case-section-intro, .flow-grid p, .case-feature-grid p,
+  .architecture-flow p, .engineering-highlights p, .detail-list li, .team-panel p { font-size: 16px; }
+  .case-problem-grid p:not(.eyebrow) { margin-top: 14px; }
+  .case-section { margin-top: 44px; padding-top: 28px; }
+  .case-section-intro { margin-top: 16px; }
+  .flow-grid, .case-feature-grid, .architecture-flow { margin-top: 28px; gap: 20px; }
+  .flow-grid h3 { font-size: 20px; }
+  .architecture-flow > div, .technology-panel, .detail-list, .team-panel { padding: 22px; }
+  .technology-panel h3, .detail-list h3 { font-size: 20px; }
+  .technology-panel .technology-badges { margin-top: 18px; }
+  .next-project { margin-top: 44px; padding-block: 28px; }
+  .next-project h2 { font-size: 28px; margin-top: 10px; }
+}
+
+@media (min-width: 900px) and (pointer: coarse) {
+  .button, .gallery-selectors button { min-height: 44px; }
+}
