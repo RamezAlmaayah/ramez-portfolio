@@ -298,7 +298,7 @@ export const projects: Project[] = [
       }
     ],
     "github": null,
-    "demo": null,
+    "demo": "https://unseenjo.netlify.app/",
     "image": "/projects/unseen-jo/homepage.png",
     "imageAlt": "Unseen Jo homepage with a Jordan landscape, exploration links, and the destination collection empty state.",
     "gallery": [

@@ -1,6 +1,40 @@
 import { expect, test } from '@playwright/test'
 import AxeBuilder from '@axe-core/playwright'
 
+test('Unseen Jo live demo is shared by the homepage and case study', async ({ page }) => {
+  const url = 'https://unseenjo.netlify.app/'
+  // Test link navigation independently of third-party availability.
+  await page.context().route(url, (route) => route.fulfill({ contentType: 'text/html', body: '<title>Unseen Jo demo destination</title>' }))
+  for (const path of ['/', '/projects/unseen-jo']) {
+    await page.goto(path)
+    const actions = page.locator(path === '/' ? '.project-unseen-jo .project-links' : '.case-intro .project-links')
+    const live = actions.getByRole('link', { name: /Live Demo/ })
+    await expect(live).toBeVisible()
+    await expect(live).toHaveAttribute('href', url)
+    await expect(live).toHaveAttribute('target', '_blank')
+    await expect(live).toHaveAttribute('rel', 'noopener noreferrer')
+    await expect(live).toHaveClass('button button-white')
+    await expect(live.locator('svg')).toHaveClass(/lucide-external-link/)
+    await expect(actions.getByRole('link', { name: /GitHub|Source Code/ })).toHaveCount(0)
+    if (path === '/') {
+      await expect(page.getByRole('link', { name: 'Explore Unseen Jo case study' })).toHaveAttribute('href', '/projects/unseen-jo')
+      await expect(page.locator('.project-planora .project-links').getByRole('link', { name: /Live Demo/ })).toHaveAttribute('href', 'https://planora.dynv6.net/')
+    }
+    for (const theme of ['light', 'dark']) {
+      await page.evaluate((value) => document.documentElement.dataset.theme = value, theme)
+      for (const width of [320, 375, 768, 1366, 1920]) {
+        await page.setViewportSize({ width, height: 900 })
+        await live.scrollIntoViewIfNeeded()
+        await expect(live).toBeVisible()
+        expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true)
+      }
+    }
+    const [popup] = await Promise.all([page.waitForEvent('popup'), live.click()])
+    await expect.poll(() => popup.url()).toBe(url)
+    await popup.close()
+  }
+})
+
 test('Unseen Jo real screenshots, responsive thumbnails, swipe, and accessible lightbox', async ({ page }, info) => {
   test.setTimeout(120000)
   const errors: string[] = []
@@ -64,6 +98,8 @@ test('Unseen Jo real screenshots, responsive thumbnails, swipe, and accessible l
   await expect(dialog).not.toBeVisible()
   for (const theme of ['light', 'dark']) {
     await page.evaluate((value) => document.documentElement.dataset.theme = value, theme)
+    // Scan from the top so the sticky header does not partially cover header actions.
+    await page.evaluate(() => window.scrollTo(0, 0))
     expect((await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa']).analyze()).violations).toEqual([])
     await gallery.screenshot({ path: `test-results/unseen-gallery-${theme}-${info.project.name}.png` })
   }
