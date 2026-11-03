@@ -37,7 +37,7 @@ export interface Project {
 export const portfolio = {
   "name": "Ramez Ahmad ALMAAYE'H",
   "role": "Full-Stack Developer | Software Engineer",
-  "location": "Madaba, Jordan",
+  "location": "Amman, Jordan",
   "phone": "+962 7 7914 9585",
   "phoneHref": "tel:+962779149585",
   "email": "ramezmayaa@gmail.com",
