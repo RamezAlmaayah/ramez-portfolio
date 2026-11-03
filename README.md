@@ -53,7 +53,7 @@ Planora uses the supplied real Admin Dashboard and Project Analytics screenshots
 
 ### Resume
 
-The latest matching Full-Stack CV was verified and copied unchanged from `Downloads/Ramez_Ats_CV_New.pdf` to:
+The latest matching Full-Stack CV was verified and copied unchanged from `Downloads/Ramez_Ats_CV_New (1).pdf` to:
 
 ```text
 public/ramez-ahmad-resume.pdf

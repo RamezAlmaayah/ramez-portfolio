@@ -4,11 +4,11 @@ The existing React/TypeScript/Vite portfolio is maintained at https://ramez-dev-
 
 ## Approved content and CV
 
-The user explicitly confirmed `C:/Users/Magic Systems/Downloads/Ramez_Ats_CV_New.pdf` as the approved replacement after the requested Larger_Font filename could not be found. The supplied PDF was inspected and copied byte-for-byte to `public/ramez-ahmad-resume.pdf`. It was not recreated or edited.
+The user supplied `C:/Users/Magic Systems/Downloads/Ramez_Ats_CV_New (1).pdf` as the new approved CV on 4 November 2026. It was inspected and copied byte-for-byte to `public/ramez-ahmad-resume.pdf`. The PDF was not recreated or edited.
 
 - Public download: `/ramez-ahmad-resume.pdf`
-- Size: 80,463 bytes
-- SHA-256: `c49bbd66e6fcb2c6c632ef9d58e1a18ef099acd99369f6ac50c6a683f4c1f887`
+- Size: 80,381 bytes
+- SHA-256: `58ea570b5e6075f679aa6bfb174b2a11009908ecfd8fc802e96a7eb6d9bca5ff`
 - Visual inspection: `docs/approved-cv-preview.png`
 
 The profile now states the junior full-stack/software engineering career target, both July–September 2026 internships, six aligned skill groups, the Software Engineering degree (2022–2026), Apex AI Engineering training marked In Progress, ASP.NET & Oracle APEX training, and English for IT 1. Unsupported general Python/Docker/CI/CD skill claims were removed. CaeloTerra remains an additional valid project with its existing in-development scope.
