@@ -1,10 +1,12 @@
 import { expect, test } from '@playwright/test'
 import AxeBuilder from '@axe-core/playwright'
 
-test('Unseen Jo live demo is shared by the homepage and case study', async ({ page }) => {
+test('Unseen Jo live demo and verified GitHub links are shared by the homepage and case study', async ({ page }) => {
   const url = 'https://unseenjo.netlify.app/'
+  const repository = 'https://github.com/RamezAlmaayah/unseen-jo'
   // Test link navigation independently of third-party availability.
   await page.context().route(url, (route) => route.fulfill({ contentType: 'text/html', body: '<title>Unseen Jo demo destination</title>' }))
+  await page.context().route(repository, (route) => route.fulfill({ contentType: 'text/html', body: '<title>Verified Unseen Jo repository destination</title>' }))
   for (const path of ['/', '/projects/unseen-jo']) {
     await page.goto(path)
     const actions = page.locator(path === '/' ? '.project-unseen-jo .project-links' : '.case-intro .project-links')
@@ -15,7 +17,12 @@ test('Unseen Jo live demo is shared by the homepage and case study', async ({ pa
     await expect(live).toHaveAttribute('rel', 'noopener noreferrer')
     await expect(live).toHaveClass('button button-white')
     await expect(live.locator('svg')).toHaveClass(/lucide-external-link/)
-    await expect(actions.getByRole('link', { name: /GitHub|Source Code/ })).toHaveCount(0)
+    const github = actions.getByRole('link', { name: /View on GitHub/ })
+    await expect(github).toHaveAttribute('href', repository)
+    await expect(github).toHaveAttribute('target', '_blank')
+    await expect(github).toHaveAttribute('rel', 'noopener noreferrer')
+    await expect(github).toHaveClass('button button-white')
+    await expect(github.locator('svg')).toBeAttached()
     if (path === '/') {
       await expect(page.getByRole('link', { name: 'Explore Unseen Jo case study' })).toHaveAttribute('href', '/projects/unseen-jo')
       await expect(page.locator('.project-planora .project-links').getByRole('link', { name: /Live Demo/ })).toHaveAttribute('href', 'https://planora.dynv6.net/')
@@ -26,12 +33,20 @@ test('Unseen Jo live demo is shared by the homepage and case study', async ({ pa
         await page.setViewportSize({ width, height: 900 })
         await live.scrollIntoViewIfNeeded()
         await expect(live).toBeVisible()
+        await expect(github).toBeVisible()
+        const liveBox = await live.boundingBox()
+        const githubBox = await github.boundingBox()
+        expect(liveBox!.x + liveBox!.width <= githubBox!.x || liveBox!.y + liveBox!.height <= githubBox!.y).toBe(true)
         expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true)
       }
     }
     const [popup] = await Promise.all([page.waitForEvent('popup'), live.click()])
     await expect.poll(() => popup.url()).toBe(url)
     await popup.close()
+    const [repositoryPopup] = await Promise.all([page.waitForEvent('popup'), github.click()])
+    await expect.poll(() => repositoryPopup.url()).toBe(repository)
+    expect(await repositoryPopup.evaluate(() => window.opener === null)).toBe(true)
+    await repositoryPopup.close()
   }
 })
 

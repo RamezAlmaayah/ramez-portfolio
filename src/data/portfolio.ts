@@ -275,7 +275,7 @@ export const projects: Project[] = [
         "description": "User-specific authentication flows backed by Supabase Auth, PostgreSQL, and Row Level Security."
       }
     ],
-    "github": null,
+    "github": "https://github.com/RamezAlmaayah/unseen-jo",
     "demo": "https://unseenjo.netlify.app/",
     "image": "/projects/unseen-jo/homepage.png",
     "imageAlt": "Unseen Jo homepage with a Jordan landscape, exploration links, and the destination collection empty state.",
