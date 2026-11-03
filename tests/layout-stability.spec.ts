@@ -15,7 +15,7 @@ test('font and image loading do not cause substantial layout shifts', async ({ p
       }
     }).observe({ type: 'layout-shift', buffered: true })
   })
-  for (const route of ['/', '/projects/planora', '/projects/caeloterra', '/projects/unseen-jo', '/projects/moodle-dashboard', '/projects/gym-management']) {
+  for (const route of ['/', '/projects/planora', '/projects/caeloterra', '/projects/unseen-jo', '/projects/moodle-dashboard', '/projects/fr-compare']) {
     await page.goto(route)
     await page.evaluate(() => document.fonts.ready)
     for (const image of await page.locator('main img:visible').all()) {

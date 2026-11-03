@@ -29,7 +29,6 @@ Redesigned the existing portfolio in place. No disconnected project was created.
 - `/projects/caeloterra`: NASA Space Apps 2026 context and **In Development** status; features are clearly development/design goals, without claims of production release or validated agricultural outcomes.
 - `/projects/unseen-jo`: **Design / Proposed MVP**; all eight proposed features, target audiences, categories, preference inputs, recommendation explanations, place details, team names without assigned responsibilities, planned technical architecture, and preference-based filtering rather than a trained AI model.
 - `/projects/moodle-dashboard`: supplied Excel administration workflow, PHP/MySQL/PhpSpreadsheet/Moodle stack, local environment setup, and functional/integration testing.
-- Gym Management remains additional homepage work, with all six supplied modules, its actual supplied stack, and Postman testing.
 
 ## Validation
 
@@ -102,7 +101,6 @@ Added files:
 - `public/work/caeloterra.svg`
 - `public/work/unseen-jo.svg`
 - `public/work/moodle.svg`
-- `public/work/gym.svg`
 - `public/social-preview.svg`
 - `public/social-preview.png`
 - `public/fonts/OFL-Manrope.txt`

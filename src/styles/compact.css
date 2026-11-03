@@ -82,13 +82,12 @@
   .project-kicker { font-size: 12px; margin-bottom: 12px; gap: 10px; }
   .project-category { font-size: 14px; margin-bottom: 6px; }
   .project-subtitle { font-size: 16px; margin-top: 8px; }
-  .project-description, .additional-project p, .gym-modules { font-size: var(--text-body); line-height: 1.65; }
+  .project-description, .additional-project p { font-size: var(--text-body); line-height: 1.65; }
   .project-description { margin-top: 12px; }
   .project-stack { margin-block: 14px 16px; }
   .project-links { gap: 10px; margin-top: 14px; }
   .project-preview figcaption { font-size: 12px; padding: 10px 12px; }
   .additional-project { gap: 32px; margin-top: 44px; padding-top: 28px; }
-  .gym-modules { gap: 8px; }
 
   .timeline-item { gap: 36px; padding: 0 0 32px 40px; }
   .timeline-item h3 { font-size: 24px; }

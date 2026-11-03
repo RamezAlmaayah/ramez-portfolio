@@ -13,8 +13,10 @@ export function RouteEffects() {
       ['meta[property="og:description"]', metadata.description],
       ['meta[name="twitter:title"]', metadata.title],
       ['meta[name="twitter:description"]', metadata.description],
+      ['link[rel="canonical"]', metadata.canonical],
+      ['meta[property="og:url"]', metadata.canonical],
     ])
-      document.querySelector(selector)?.setAttribute('content', content)
+      document.querySelector(selector)?.setAttribute(selector.startsWith('link') ? 'href' : 'content', content)
   }, [location.pathname])
   useEffect(() => {
     if (!location.hash) return

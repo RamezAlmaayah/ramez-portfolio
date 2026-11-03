@@ -57,16 +57,20 @@ export function Projects() {
         <div className="additional-work">
           <h3>Additional Work</h3>
           {projects.filter((project) => !project.featured).map((project) => (
-            <Reveal key={project.slug} className="additional-project">
+            <Reveal key={project.slug} className={`additional-project${project.slug === 'fr-compare' ? ' additional-project-visual' : ''}`}>
+              {project.slug === 'fr-compare' ? <ProjectPreview project={project} /> : null}
               <div>
                 <p className="eyebrow">{project.context}</p>
                 <h3>{project.title}</h3>
+                {project.slug === 'fr-compare' ? <p className="project-subtitle">{project.subtitle}</p> : null}
                 <p>{project.description}</p>
+                {project.slug === 'fr-compare' ? <TechnologyList names={project.technologies} className="project-stack" label={`${project.title} technology stack`} /> : null}
                 <Link to={`/projects/${project.slug}`} className="text-action" aria-label={`Explore ${project.title} case study`}>
                   Explore Case Study <ArrowUpRight size={18} aria-hidden="true" />
                 </Link>
+                <ProjectLinks project={project} />
               </div>
-              <TechnologyList names={project.technologies} className="project-stack" label={`${project.title} technology stack`} />
+              {project.slug !== 'fr-compare' ? <TechnologyList names={project.technologies} className="project-stack" label={`${project.title} technology stack`} /> : null}
             </Reveal>
           ))}
         </div>

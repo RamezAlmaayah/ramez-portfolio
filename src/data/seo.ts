@@ -5,6 +5,7 @@ export function getPageMetadata(path: string) {
   path = normalizePathname(path)
   const project = projects.find((item) => `/projects/${item.slug}` === path)
   return {
+    canonical: new URL(path, 'https://ramez-dev-portfolio.netlify.app').href,
     title: project
       ? `${project.title} — Case Study | ${portfolio.name}`
       : path === '/'

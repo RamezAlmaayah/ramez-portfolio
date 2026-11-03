@@ -63,7 +63,7 @@ test('badges render legibly in skills and all project stacks in both themes', as
         .evaluate((element) => parseFloat(getComputedStyle(element).fontSize)),
     ).toBeGreaterThanOrEqual(page.viewportSize()!.width >= 900 ? 14 : 15)
     await expect(page.locator('#skills [data-technology="AJAX"]')).toHaveClass(/fallback/)
-    for (const slug of ['planora', 'caeloterra', 'unseen-jo', 'moodle-dashboard', 'gym-management']) {
+    for (const slug of ['planora', 'caeloterra', 'unseen-jo', 'moodle-dashboard', 'fr-compare']) {
       await page.goto(`/projects/${slug}`)
       const stack = page.locator('.technology-panel .technology-badges')
       await stack.scrollIntoViewIfNeeded()

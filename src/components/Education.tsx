@@ -20,19 +20,19 @@ export function Education() {
             <span>{portfolio.education.location}</span>
           </Reveal>
           <div className="training-list">
-            <h3>Training & coursework</h3>
+            <h3>Training & certificates</h3>
             {portfolio.training.map((training, index) => (
               <Reveal className="training-item" key={training.title} delay={index * 0.06}>
                 <div>
                   <h4>{training.title}</h4>
                   <p>{training.provider}</p>
+                  {training.status ? <span className="eyebrow">{training.status}</span> : null}
                 </div>
                 <ArrowUpRight size={24} aria-hidden="true" />
               </Reveal>
             ))}
             <p className="training-note">
-              Training and academic coursework; presented as learning experiences, not professional
-              certifications.
+              Continuing professional learning. The AI Engineering program is in progress.
             </p>
           </div>
         </div>

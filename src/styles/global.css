@@ -749,6 +749,8 @@ ol {
 .additional-work > h3 { margin-top: 44px; color: var(--color-dark-text); }
 .additional-work .additional-project { margin-top: 24px; padding-top: 24px; }
 .additional-work .text-action { margin-top: 16px; }
+.additional-project-visual { align-items: center; }
+.additional-project-visual .project-preview { margin: 0; }
 .additional-project h3 {
   font-size: var(--text-project);
   margin-top: 20px;
@@ -758,25 +760,7 @@ ol {
   margin-top: 20px;
   font-size: 18px;
 }
-.gym-modules {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  font-size: 18px;
-}
-.gym-modules li {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-.gym-modules svg {
-  color: var(--color-dark-muted);
-}
-.gym-testing {
-  font-size: 16px;
-  color: var(--color-dark-muted);
-  margin-top: 20px;
-}
+
 .experience-section {
   border-bottom: 1px solid var(--color-border);
 }
@@ -1546,9 +1530,6 @@ ol {
   .skills-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .skills-grid .skill-card:last-child {
-    grid-column: 1 / -1;
-  }
   .skill-card h3 {
     min-height: 0;
   }
@@ -1876,9 +1857,7 @@ ol {
   .additional-project > div > p:not(.eyebrow) {
     font-size: 17px;
   }
-  .gym-modules {
-    font-size: 17px;
-  }
+
   .timeline-item {
     padding-left: 33px;
     gap: 22px;
@@ -2286,12 +2265,7 @@ ol {
 .projects-section .technology-badge:hover {
   background: var(--color-technology-dark-hover);
 }
-.gym-testing {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 12px;
-}
+
 .architecture-flow .technology-badges {
   margin-top: 20px;
 }

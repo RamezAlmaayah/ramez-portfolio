@@ -1,7 +1,7 @@
 import { expect, test } from '@playwright/test'
 
 const sizes = [[320, 900], [375, 900], [768, 1024], [1024, 900], [1366, 768], [1440, 900], [1536, 864], [1920, 1080]]
-const routes = ['/', '/projects/planora', '/projects/caeloterra', '/projects/unseen-jo', '/projects/moodle-dashboard', '/projects/gym-management']
+const routes = ['/', '/projects/planora', '/projects/caeloterra', '/projects/unseen-jo', '/projects/moodle-dashboard', '/projects/fr-compare']
 
 for (const theme of ['light', 'dark']) {
   test(`${theme}: proportional layout at 100% zoom across all requested sizes and pages`, async ({ page, isMobile }) => {

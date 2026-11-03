@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 840" role="img" aria-labelledby="title desc">
+<title id="title">FR Compare — Procurement, considered.</title>
+<desc id="desc">Editorial project cover with the FR monogram and a request, compare, decide workflow. Not an application screenshot.</desc>
+<rect width="1200" height="840" fill="#1c354b"/>
+<g fill="none" stroke="#9eb3c1" opacity=".3"><circle cx="970" cy="170" r="260"/><circle cx="970" cy="170" r="330"/><path d="M75 185h1050M75 650h1050"/></g>
+<g font-family="Arial,sans-serif" fill="#f5f7f8">
+<rect x="75" y="65" width="92" height="82" rx="12" fill="#0a2342"/>
+<text x="94" y="122" font-size="42" font-weight="bold">FR</text>
+<text x="195" y="116" font-size="38">FR Compare</text>
+<text x="75" y="297" font-size="20" letter-spacing="4" fill="#9eb3c1">SUPPLIER QUOTATION MANAGEMENT</text>
+<text x="75" y="403" font-size="78" letter-spacing="-3">Procurement,</text>
+<text x="75" y="493" font-size="78" letter-spacing="-3">considered.</text>
+<g font-size="26"><text x="75" y="596">01 / Request</text><text x="450" y="596">02 / Compare</text><text x="865" y="596">03 / Decide</text></g>
+<path d="M280 586h120m-12-7 12 7-12 7m302-7h105m-12-7 12 7-12 7" fill="none" stroke="#9eb3c1" stroke-width="2"/>
+<text x="75" y="734" font-size="22" fill="#9eb3c1">React / Node.js / Express / MongoDB</text>
+<text x="75" y="781" font-size="17" fill="#9eb3c1">PROJECT COVER / 2026</text>
+</g></svg>

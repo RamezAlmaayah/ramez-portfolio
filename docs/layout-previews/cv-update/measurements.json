@@ -313,62 +313,6 @@
   },
   {
     "theme": "light",
-    "route": "/projects/gym-management",
-    "viewport": [
-      1366,
-      768
-    ],
-    "dpr": 1,
-    "visualScale": 1,
-    "rootFont": "16px",
-    "rootZoom": "1",
-    "bodyTransform": "none",
-    "pageHeight": 2543,
-    "overflow": false,
-    "container": {
-      "width": 1120,
-      "height": 60,
-      "top": 0,
-      "bottom": 60,
-      "fontSize": "15.366px",
-      "paddingTop": "0px",
-      "paddingBottom": "0px"
-    },
-    "header": {
-      "width": 1120,
-      "height": 60,
-      "top": 0,
-      "bottom": 60,
-      "fontSize": "15.366px",
-      "paddingTop": "0px",
-      "paddingBottom": "0px"
-    },
-    "hero": null,
-    "heading": {
-      "width": 540,
-      "height": 51.578125,
-      "top": 180.1875,
-      "bottom": 231.765625,
-      "fontSize": "45.66px",
-      "paddingTop": "0px",
-      "paddingBottom": "0px"
-    },
-    "description": null,
-    "actions": null,
-    "section": null,
-    "sectionHeading": null,
-    "caseImage": {
-      "width": 678,
-      "height": 474.59375,
-      "top": 443.71875,
-      "bottom": 918.3125,
-      "fontSize": "15.366px",
-      "paddingTop": "0px",
-      "paddingBottom": "0px"
-    }
-  },
-  {
-    "theme": "light",
     "route": "/",
     "viewport": [
       1440,
@@ -850,62 +794,6 @@
       "height": 474.59375,
       "top": 566.65625,
       "bottom": 1041.25,
-      "fontSize": "15.92px",
-      "paddingTop": "0px",
-      "paddingBottom": "0px"
-    }
-  },
-  {
-    "theme": "light",
-    "route": "/projects/gym-management",
-    "viewport": [
-      1920,
-      1080
-    ],
-    "dpr": 1,
-    "visualScale": 1,
-    "rootFont": "16px",
-    "rootZoom": "1",
-    "bodyTransform": "none",
-    "pageHeight": 2627,
-    "overflow": false,
-    "container": {
-      "width": 1120,
-      "height": 60,
-      "top": 0,
-      "bottom": 60,
-      "fontSize": "15.92px",
-      "paddingTop": "0px",
-      "paddingBottom": "0px"
-    },
-    "header": {
-      "width": 1120,
-      "height": 60,
-      "top": 0,
-      "bottom": 60,
-      "fontSize": "15.92px",
-      "paddingTop": "0px",
-      "paddingBottom": "0px"
-    },
-    "hero": null,
-    "heading": {
-      "width": 540,
-      "height": 115.71875,
-      "top": 180.1875,
-      "bottom": 295.90625,
-      "fontSize": "51.2px",
-      "paddingTop": "0px",
-      "paddingBottom": "0px"
-    },
-    "description": null,
-    "actions": null,
-    "section": null,
-    "sectionHeading": null,
-    "caseImage": {
-      "width": 678,
-      "height": 474.59375,
-      "top": 508.796875,
-      "bottom": 983.390625,
       "fontSize": "15.92px",
       "paddingTop": "0px",
       "paddingBottom": "0px"
@@ -1225,62 +1113,6 @@
   },
   {
     "theme": "dark",
-    "route": "/projects/gym-management",
-    "viewport": [
-      1366,
-      768
-    ],
-    "dpr": 1,
-    "visualScale": 1,
-    "rootFont": "16px",
-    "rootZoom": "1",
-    "bodyTransform": "none",
-    "pageHeight": 2543,
-    "overflow": false,
-    "container": {
-      "width": 1120,
-      "height": 60,
-      "top": 0,
-      "bottom": 60,
-      "fontSize": "15.366px",
-      "paddingTop": "0px",
-      "paddingBottom": "0px"
-    },
-    "header": {
-      "width": 1120,
-      "height": 60,
-      "top": 0,
-      "bottom": 60,
-      "fontSize": "15.366px",
-      "paddingTop": "0px",
-      "paddingBottom": "0px"
-    },
-    "hero": null,
-    "heading": {
-      "width": 540,
-      "height": 51.578125,
-      "top": 180.1875,
-      "bottom": 231.765625,
-      "fontSize": "45.66px",
-      "paddingTop": "0px",
-      "paddingBottom": "0px"
-    },
-    "description": null,
-    "actions": null,
-    "section": null,
-    "sectionHeading": null,
-    "caseImage": {
-      "width": 678,
-      "height": 474.59375,
-      "top": 443.71875,
-      "bottom": 918.3125,
-      "fontSize": "15.366px",
-      "paddingTop": "0px",
-      "paddingBottom": "0px"
-    }
-  },
-  {
-    "theme": "dark",
     "route": "/",
     "viewport": [
       1440,
@@ -1762,62 +1594,6 @@
       "height": 474.59375,
       "top": 566.65625,
       "bottom": 1041.25,
-      "fontSize": "15.92px",
-      "paddingTop": "0px",
-      "paddingBottom": "0px"
-    }
-  },
-  {
-    "theme": "dark",
-    "route": "/projects/gym-management",
-    "viewport": [
-      1920,
-      1080
-    ],
-    "dpr": 1,
-    "visualScale": 1,
-    "rootFont": "16px",
-    "rootZoom": "1",
-    "bodyTransform": "none",
-    "pageHeight": 2627,
-    "overflow": false,
-    "container": {
-      "width": 1120,
-      "height": 60,
-      "top": 0,
-      "bottom": 60,
-      "fontSize": "15.92px",
-      "paddingTop": "0px",
-      "paddingBottom": "0px"
-    },
-    "header": {
-      "width": 1120,
-      "height": 60,
-      "top": 0,
-      "bottom": 60,
-      "fontSize": "15.92px",
-      "paddingTop": "0px",
-      "paddingBottom": "0px"
-    },
-    "hero": null,
-    "heading": {
-      "width": 540,
-      "height": 115.71875,
-      "top": 180.1875,
-      "bottom": 295.90625,
-      "fontSize": "51.2px",
-      "paddingTop": "0px",
-      "paddingBottom": "0px"
-    },
-    "description": null,
-    "actions": null,
-    "section": null,
-    "sectionHeading": null,
-    "caseImage": {
-      "width": 678,
-      "height": 474.59375,
-      "top": 508.796875,
-      "bottom": 983.390625,
       "fontSize": "15.92px",
       "paddingTop": "0px",
       "paddingBottom": "0px"

@@ -12,7 +12,7 @@ for (const theme of ['light', 'dark']) {
   const page = await context.newPage()
   for (const [width, height] of [[1366, 768], [1440, 900], [1536, 864], [1920, 1080]]) {
     await page.setViewportSize({ width, height })
-    for (const route of ['/', '/projects/planora', '/projects/caeloterra', '/projects/unseen-jo', '/projects/moodle-dashboard', '/projects/gym-management']) {
+    for (const route of ['/', '/projects/planora', '/projects/caeloterra', '/projects/unseen-jo', '/projects/moodle-dashboard', '/projects/fr-compare']) {
       if (route !== '/' && width !== 1366 && width !== 1920) continue
       await page.goto(`http://127.0.0.1:4173${route}`)
       await page.evaluate(() => document.fonts.ready)

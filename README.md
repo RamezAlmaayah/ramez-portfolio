@@ -26,7 +26,7 @@ The build emits the client app, builds the React server-render entry, and preren
 
 ## Deploy on Netlify
 
-Import this repository from GitHub, choose production branch `main`, and leave the base directory blank. The committed `netlify.toml` sets Node.js 24, build command `npm run build`, and publish directory `dist`. The SPA fallback in `public/_redirects` is copied into the production output. See [docs/NETLIFY-DEPLOYMENT.md](docs/NETLIFY-DEPLOYMENT.md) for setup and production verification. No Netlify deployment URL is assumed or reserved.
+Import this repository from GitHub, choose production branch `main`, and leave the base directory blank. The committed `netlify.toml` sets Node.js 24, build command `npm run build`, and publish directory `dist`. The SPA fallback in `public/_redirects` is copied into the production output. See [docs/NETLIFY-DEPLOYMENT.md](docs/NETLIFY-DEPLOYMENT.md) for setup and production verification. The existing production site is https://ramez-dev-portfolio.netlify.app/.
 
 ## Routes
 
@@ -37,9 +37,9 @@ Import this repository from GitHub, choose production branch `main`, and leave t
 | `/projects/caeloterra`       | CaeloTerra — in-development decision support     |
 | `/projects/unseen-jo`        | Unseen Jo — implemented React/Supabase tourism platform |
 | `/projects/moodle-dashboard` | Moodle Excel administration dashboard            |
-| `/projects/gym-management` | Gym Management System — additional work |
+| `/projects/fr-compare` | FR Compare — additional work |
 
-Featured projects are Unseen Jo, Planora, and CaeloTerra, in that order. Moodle and Gym are retained under Additional Work with their own detail routes. The supplied GitHub profile and official Planora repository/demo URLs are stored centrally; no URLs are invented for other projects.
+Featured projects are Unseen Jo, Planora, and CaeloTerra, in that order. Moodle and FR Compare are retained under Additional Work with their own detail routes. The supplied GitHub profile and official Planora repository/demo URLs are stored centrally; no URLs are invented for other projects.
 
 ## Edit the portfolio
 
@@ -49,11 +49,11 @@ Featured projects are Unseen Jo, Planora, and CaeloTerra, in that order. Moodle 
 - `src/styles/global.css`: editorial layouts, component styles, hover interactions, and responsive rules.
 - `src/pages/ProjectPage.tsx`: common case-study layout and the project-specific Planora architecture / Unseen Jo concept sections.
 
-Planora uses the supplied real Admin Dashboard and Project Analytics screenshots, with official demo and repository links in src/data/portfolio.ts. Its case-study gallery supports enlargement, previous/next controls, arrow keys, Escape, native modal focus containment, and reduced motion. Other project artwork is original SVG illustration. Captions and alternative text identify it as illustration, not real screenshots. Replace `image` and `imageAlt` with genuine screenshots when available, updating captions accordingly. SVGs define their own CSS color variables because standalone image files cannot inherit document variables. Their deterministic source is in `scripts/generate-artwork.mjs` (the optional Gym illustration is maintained directly).
+Planora uses the supplied real Admin Dashboard and Project Analytics screenshots, with official demo and repository links in src/data/portfolio.ts. Its case-study gallery supports enlargement, previous/next controls, arrow keys, Escape, native modal focus containment, and reduced motion. Other project artwork is original SVG illustration. Captions and alternative text identify it as illustration, not real screenshots. Replace `image` and `imageAlt` with genuine screenshots when available, updating captions accordingly. SVGs define their own CSS color variables because standalone image files cannot inherit document variables. Their deterministic source is in `scripts/generate-artwork.mjs` (the FR Compare cover is maintained directly).
 
 ### Resume
 
-The latest matching Full-Stack CV was verified and copied unchanged from `Downloads/Ramez_ALMAAYEH_Full_Stack_ATS_Updated.pdf` to:
+The latest matching Full-Stack CV was verified and copied unchanged from `Downloads/Ramez_Ats_CV_New.pdf` to:
 
 ```text
 public/ramez-ahmad-resume.pdf

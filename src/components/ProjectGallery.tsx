@@ -97,7 +97,7 @@ export function ProjectGallery({ project }: { project: Project }) {
         <button ref={trigger} type="button" className="gallery-enlarge" style={{ aspectRatio: `${image.width} / ${image.height}` }} aria-label={`Enlarge ${image.title}`} aria-haspopup="dialog" aria-describedby="gallery-caption"
           onTouchStart={startSwipe} onTouchEnd={endSwipe} onTouchCancel={() => { touchStart.current = null }}
           onClick={() => { if (swiped.current) { swiped.current = false; return }; setOpen(true) }}>
-          <span className="gallery-enlarge-label"><Maximize2 size={18} aria-hidden="true" /> Enlarge screenshot</span>
+          <span className="gallery-enlarge-label"><Maximize2 size={18} aria-hidden="true" /> {project.gallery ? 'Enlarge screenshot' : 'Enlarge artwork'}</span>
         </button>
       </div>
       {images.length > 1 ? <div className="gallery-selectors" aria-label="Choose a screenshot">

@@ -1,3 +1,4 @@
+import { readFile } from 'node:fs/promises'
 import { expect, test } from '@playwright/test'
 
 test('latest CV identity, skills, featured order, secondary work, and actual resume download', async ({ page, request }) => {
@@ -11,26 +12,26 @@ test('latest CV identity, skills, featured order, secondary work, and actual res
   await expect(profile).toHaveAttribute('target', '_blank')
   await expect(profile).toHaveAttribute('rel', 'noopener noreferrer')
   await expect(page.locator('.featured-project h3')).toHaveText(['Unseen Jo', 'Planora', 'CaeloTerra'])
-  await expect(page.locator('.additional-work .additional-project h3')).toHaveText(['Moodle Excel Management Dashboard', 'Gym Management System'])
+  await expect(page.locator('.additional-work .additional-project h3')).toHaveText(['Moodle Excel Management Dashboard', 'FR Compare'])
   await expect(page.locator('#skills .skill-card h3')).toHaveText([
-    'Programming Languages', 'Frontend Development', 'Backend Development & APIs', 'Databases & Cloud',
-    'Authentication, Security & Architecture', 'DevOps & Development Tools', 'Testing & Methodologies',
+    'Programming Languages', 'Frontend Development', 'Backend & APIs', 'Databases',
+    'Architecture & Security', 'Tools & Testing',
   ])
-  for (const name of ['TypeScript', 'JavaScript (ES6+)', 'React Hooks', 'React Router', 'PostgreSQL', 'Supabase Auth', 'Docker Compose', 'GitHub Actions', 'Jira', 'Swagger / OpenAPI', 'Motion']) {
+  for (const name of ['C#', 'TypeScript', 'JavaScript', 'React.js', 'PostgreSQL', 'Supabase', 'Express.js', 'MongoDB', 'Git', 'Postman', 'Vite']) {
     const badge = page.locator('#skills').getByText(name, { exact: true })
     await expect(badge).toBeAttached()
     const image = badge.locator('..').locator('img')
     await image.scrollIntoViewIfNeeded()
     await expect.poll(() => image.evaluate((el) => (el as HTMLImageElement).naturalWidth)).toBeGreaterThan(0)
   }
-  for (const name of ['SOLID Principles', 'LINQ', 'Row Level Security (RLS)', 'CI/CD']) {
+  for (const name of ['SOLID', 'LINQ', 'JWT', 'RBAC', 'OOP', 'Dependency Injection']) {
     await expect(page.locator('#skills').getByText(name, { exact: true }).locator('..')).toHaveClass(/fallback/)
   }
   const resume = await request.get('/ramez-ahmad-resume.pdf')
   expect(resume.status()).toBe(200)
   expect(resume.headers()['content-type']).toContain('application/pdf')
   expect((await resume.body()).subarray(0, 5).toString()).toBe('%PDF-')
-  expect((await resume.body()).length).toBe(77225)
+  expect(await resume.body()).toEqual(await readFile('public/ramez-ahmad-resume.pdf'))
   const [download] = await Promise.all([
     page.waitForEvent('download'),
     page.locator('.hero-actions').getByRole('link', { name: 'Download Resume' }).click(),

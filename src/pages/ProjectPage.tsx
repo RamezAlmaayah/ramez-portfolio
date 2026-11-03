@@ -193,6 +193,16 @@ export function ProjectPage({ project }: { project: Project }) {
             </div>
           </section>
         ) : null}
+        {project.details ? (
+          <section className="case-section">
+            <p className="eyebrow">IMPLEMENTATION / DECISIONS & LEARNING</p>
+            <h2>From request to decision.</h2>
+            <div className="unseen-details-grid">
+              {project.details.map((detail) => <DetailList key={detail.title} {...detail} />)}
+            </div>
+            <p className="case-section-intro">Technical details reflect the project repository. The cover is an editorial illustration; application screenshots will be added when verified captures are available.</p>
+          </section>
+        ) : null}
         <section className="case-section engineering-grid">
           <div>
             <p className="eyebrow">05 / ENGINEERING</p>

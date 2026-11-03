@@ -30,6 +30,7 @@ export interface Project {
   image: string
   imageAlt: string
   gallery?: ProjectScreenshot[]
+  details?: { title: string; items: string[] }[]
   featured: boolean
 }
 
@@ -45,11 +46,11 @@ export const portfolio = {
     "Thoughtful Digital",
     "Experiences."
   ],
-  "introduction": "I'm a Software Engineering graduate and Full-Stack Developer building responsive, database-driven applications with React, TypeScript, ASP.NET Core, and modern databases. I focus on secure workflows, clear interfaces, and reliable software.",
+  "introduction": "I'm a Software Engineering graduate building full-stack web applications with C#, ASP.NET Core, React.js, Node.js, and relational and NoSQL databases. I'm seeking a Junior Full-Stack Developer or Software Engineer opportunity.",
   "about": [
-    "I'm a Software Engineering graduate and Full-Stack Developer with hands-on experience building responsive, database-driven web applications using React, TypeScript, C#, ASP.NET Core, SQL Server, PostgreSQL, Supabase, and Node.js.",
-    "My experience includes developing secure authentication and authorization workflows, integrating RESTful APIs, building interactive user interfaces, and implementing software testing processes.",
-    "I also apply software engineering concepts including SOLID principles, design patterns, Clean/Onion Architecture, requirements analysis, and modern development workflows involving Docker and CI/CD."
+    "I'm a Software Engineering graduate with hands-on experience developing full-stack web applications using C#, ASP.NET Core, React.js, Node.js, and relational and NoSQL databases.",
+    "I completed two development internships, contributing to REST APIs, authentication, responsive interfaces, application testing, and debugging.",
+    "I enjoy collaborating with teams, solving practical problems, and delivering deployed software projects. I'm looking to continue growing as a Junior Full-Stack Developer or Software Engineer."
   ],
   "focus": [
     "Full-Stack Development",
@@ -73,7 +74,7 @@ export const portfolio = {
     "English — Good Working Proficiency"
   ],
   "social": {
-    "linkedin": "https://www.linkedin.com/in/ramez-al-maayah-b076ba425",
+    "linkedin": "https://www.linkedin.com/in/ramez-al-maayah-b076ba425/",
     "github": "https://github.com/RamezAlmaayah"
   },
   "cv": "/ramez-ahmad-resume.pdf" as string | null,
@@ -84,11 +85,9 @@ export const portfolio = {
       "icon": "code",
       "items": [
         "C#",
-        "JavaScript (ES6+)",
+        "JavaScript",
         "TypeScript",
-        "SQL",
-        "Python",
-        "PHP"
+        "SQL"
       ]
     },
     {
@@ -96,112 +95,88 @@ export const portfolio = {
       "icon": "layout",
       "items": [
         "React.js",
-        "React Hooks",
-        "React Router",
-        "Tailwind CSS",
-        "Bootstrap",
         "HTML5",
         "CSS3",
+        "Tailwind CSS",
+        "Bootstrap",
         "Razor",
         "AJAX",
-        "Vite",
-        "Motion"
+        "Vite"
       ]
     },
     {
-      "name": "Backend Development & APIs",
+      "name": "Backend & APIs",
       "icon": "server",
       "items": [
         "ASP.NET Core MVC",
         "ASP.NET Core Web API",
-        "Node.js",
-        "REST APIs",
         "Entity Framework Core",
         "LINQ",
-        "Swagger / OpenAPI"
+        "Node.js",
+        "Express.js",
+        "REST APIs"
       ]
     },
     {
-      "name": "Databases & Cloud",
+      "name": "Databases",
       "icon": "database",
       "items": [
         "SQL Server",
         "PostgreSQL",
-        "Supabase",
         "MySQL",
         "MongoDB",
-        "Supabase Auth",
-        "Row Level Security (RLS)"
+        "Supabase"
       ]
     },
     {
-      "name": "Authentication, Security & Architecture",
+      "name": "Architecture & Security",
       "icon": "shield",
       "items": [
         "ASP.NET Core Identity",
-        "JWT Authentication",
-        "Cookie Authentication",
-        "Role-Based Access Control (RBAC)",
-        "SOLID Principles",
-        "Design Patterns",
+        "JWT",
+        "RBAC",
+        "OOP",
+        "SOLID",
         "Clean Architecture",
-        "Onion Architecture"
+        "Dependency Injection"
       ]
     },
     {
-      "name": "DevOps & Development Tools",
-      "icon": "terminal",
-      "items": [
-        "Docker",
-        "Docker Compose",
-        "GitHub Actions",
-        "CI/CD",
-        "Git",
-        "GitHub",
-        "Jira",
-        "Postman",
-        "Visual Studio",
-        "Visual Studio Code"
-      ]
-    },
-    {
-      "name": "Testing & Methodologies",
+      "name": "Tools & Testing",
       "icon": "testing",
       "items": [
+        "Git",
+        "GitHub",
+        "Postman",
         "Unit Testing",
         "Integration Testing",
         "API Testing",
-        "Security Testing",
-        "Manual Testing",
-        "Agile / Scrum",
-        "Requirements Analysis"
+        "Agile/Scrum"
       ]
     }
   ],
   "experience": [
     {
-      "company": "The Hope International",
+      "company": "DOT Jordan",
       "role": "Full-Stack Development Intern",
-      "duration": "July 2026 – September 2026",
-      "description": "Developed a Moodle Excel Management System Dashboard for bulk student, course, teacher, and group administration using PHP, MySQL, and PhpSpreadsheet.",
+      "duration": "July 2026 \u2013 September 2026",
+      "description": "Developed FR Compare, a supplier quotation management application using React.js, Node.js, Express.js, and MongoDB.",
       "responsibilities": [
-        "Developed Excel-based administrative workflows.",
-        "Supported student, course, teacher, and group management.",
-        "Configured local application and database environments.",
-        "Validated key administrative workflows using functional and integration testing."
+        "Built responsive interfaces and integrated REST APIs for procurement workflows.",
+        "Implemented JWT authentication and database integration.",
+        "Tested application flows and debugged frontend and backend features.",
+        "Collaborated using Git and GitHub."
       ]
     },
     {
-      "company": "DOT Jordan",
+      "company": "The Hope International",
       "role": "Full-Stack Development Intern",
-      "duration": "July 2026 – September 2026",
-      "description": "Contributed to an ongoing full-stack web application using React.js, JavaScript, Node.js, and MongoDB, including responsive frontend development and database integration.",
+      "duration": "July 2026 \u2013 September 2026",
+      "description": "Built a Moodle Excel Management Dashboard prototype using PHP, MySQL, and PhpSpreadsheet.",
       "responsibilities": [
-        "Worked on responsive React interfaces.",
-        "Contributed to frontend/backend workflows.",
-        "Worked with Node.js and MongoDB.",
-        "Supported debugging and database integration.",
-        "Used Git and GitHub for version control and collaboration."
+        "Developed Excel-based workflows for users, courses, enrollments, teachers, and groups.",
+        "Integrated Moodle workflows in a local environment.",
+        "Tested administrative flows and troubleshot application and database issues."
       ]
     }
   ],
@@ -213,16 +188,19 @@ export const portfolio = {
   },
   "training": [
     {
-      "title": "ASP.NET Training",
-      "provider": "The Hope International"
+      "title": "AI Engineering Training Program",
+      "provider": "Apex Company",
+      "status": "In Progress"
     },
     {
-      "title": "Oracle APEX Training",
-      "provider": "The Hope International"
+      "title": "ASP.NET & Oracle APEX Training",
+      "provider": "The Hope International",
+      "status": null
     },
     {
-      "title": "Agile, Scrum and Waterfall",
-      "provider": "Middle East University"
+      "title": "English for IT 1",
+      "provider": "Cisco Networking Academy",
+      "status": null
     }
   ],
   "contactDescription": "I’m open to opportunities where I can contribute to meaningful software projects, collaborate with ambitious teams, and continue growing as a Full-Stack Developer and Software Engineer."
@@ -338,17 +316,14 @@ export const projects: Project[] = [
     "subtitle": "Project Management System",
     "category": "Full-Stack Software Engineering",
     "year": "2026",
-    "context": "Graduation Project",
+    "context": "Project Management System",
     "stage": null,
     "featured": true,
     "description": "Planora is a Scrum-based project management platform designed to support structured software development through sprint planning, task management, interactive Kanban boards, role-based authorization, and quality assurance workflows.",
     "problem": "Software teams require centralized tools to coordinate requirements, track development tasks, manage sprint progress, and maintain visibility across different project roles. Fragmented workflows can make project tracking and quality assurance more difficult.",
     "solution": "Planora brings essential project management activities into a unified platform, supporting Scrum-based planning, task tracking, team collaboration, and structured quality assurance.",
     "roles": [
-      "Team Leader",
-      "Full-Stack Developer",
-      "Requirements Analysis",
-      "UI/UX Design"
+      "Team Leader & Full-Stack Developer"
     ],
     "features": [
       "Sprint Backlog",
@@ -377,10 +352,10 @@ export const projects: Project[] = [
       "ASP.NET Core Identity"
     ],
     "highlights": [
-      "Structured authorization across multiple application roles.",
-      "Database-driven task management with interactive frontend behavior.",
-      "Quality assurance integrated into the development workflow.",
-      "Clean and Onion Architecture principles."
+      "Requirements engineering and team leadership across the development workflow.",
+      "Role-based authorization and database-driven Kanban task tracking.",
+      "Sprint and backlog management with QA review workflows.",
+      "Application testing and deployment."
     ],
     "flow": [
       {
@@ -550,44 +525,113 @@ export const projects: Project[] = [
     "imageAlt": "Illustrative document-to-data workflow showing Excel administration connected to Moodle."
   },
   {
-    "slug": "gym-management",
+    "slug": "fr-compare",
     "number": "05",
-    "title": "Gym Management System",
-    "subtitle": "Operations, connected.",
-    "category": "Full-Stack Web Application",
-    "year": "",
-    "context": "Personal Project",
+    "title": "FR Compare",
+    "subtitle": "Supplier Quotation Management System",
+    "category": "Full-Stack Web Application / Procurement",
+    "year": "2026",
+    "context": "DOT Jordan Internship",
     "stage": null,
     "featured": false,
-    "description": "A web-based gym management application designed to organize operational information for members, memberships, trainers, payments, attendance, and fitness classes.",
-    "problem": "",
-    "solution": "",
-    "roles": [],
+    "description": "FR Compare is a full-stack supplier quotation management platform for organizing suppliers, catalog items, requests for quotations, and competing offers to support informed purchasing decisions.",
+    "problem": "Comparing supplier quotations across separate documents makes it difficult to align item prices, delivery times, and supplier ratings before a purchasing decision.",
+    "solution": "A shared procurement workflow connects suppliers and catalog items to RFQs, quotations, side-by-side comparisons, and recorded purchasing decisions.",
+    "roles": [
+      "Full-Stack Developer"
+    ],
     "features": [
-      "Members",
-      "Memberships",
-      "Trainers",
-      "Payments",
-      "Attendance",
-      "Classes"
+      "Secure user registration and JWT authentication",
+      "Supplier management and item catalog",
+      "RFQ creation and management",
+      "Supplier quotation management",
+      "Side-by-side quotation comparison",
+      "Cheapest overall offer and cheapest supplier per item",
+      "Split-award item-subtotal analysis",
+      "Weighted best-value evaluation",
+      "Purchasing decisions and supplier ratings",
+      "Historical prices from selected quotations",
+      "Private image uploads",
+      "Dashboard summaries and reporting views"
     ],
     "technologies": [
-      "C#",
-      "ASP.NET Core MVC",
-      "Entity Framework Core",
-      "SQL Server",
-      "Razor",
-      "JavaScript",
-      "AJAX"
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB Atlas",
+      "Mongoose",
+      "Vite",
+      "Bootstrap",
+      "JWT"
     ],
     "highlights": [
-      "API testing with Postman."
+      "React and Vite frontend on Netlify, Express REST API on Render, and MongoDB Atlas persistence.",
+      "Contributed to procurement interfaces, REST API integration, JWT authentication, testing, and debugging.",
+      "Comparison logic separates final quotation totals from split-award item subtotals.",
+      "Integration-test suites cover quotation calculations, comparison, decisions, ownership, and production behavior."
     ],
-    "flow": [],
-    "github": null,
-    "demo": null,
-    "image": "/work/gym.svg",
-    "imageAlt": "Abstract geometric illustration representing connected gym operations."
+    "flow": [
+      {
+        "title": "Organize",
+        "description": "Create suppliers and catalog items, then build an RFQ with quantities."
+      },
+      {
+        "title": "Collect",
+        "description": "Record supplier quotations, unit prices, delivery days, additional costs, and discounts."
+      },
+      {
+        "title": "Compare",
+        "description": "Evaluate overall totals, per-item prices, split-award subtotals, and weighted scores."
+      },
+      {
+        "title": "Decide",
+        "description": "Select a quotation, complete the RFQ, rate the chosen supplier, and review historical prices."
+      }
+    ],
+    "github": "https://github.com/RamezAlmaayah/FR-Compare",
+    "demo": "https://frcompare.netlify.app",
+    "image": "/work/fr-compare.svg",
+    "imageAlt": "FR Compare editorial cover with the FR monogram and request-to-decision workflow; not an application screenshot.",
+    "details": [
+      {
+        "title": "Technical architecture",
+        "items": [
+          "React pages use a shared Axios client and authentication context. Vite builds the frontend, with Bootstrap and CSS for responsive interfaces.",
+          "Express routes delegate to controllers, Mongoose models, and calculation utilities. MongoDB Atlas stores application data; production uploads use GridFS."
+        ]
+      },
+      {
+        "title": "Authentication and security",
+        "items": [
+          "Passwords are hashed with bcrypt. Login issues an expiring JWT; protected requests verify the token and confirm the user still exists.",
+          "User ownership scopes supplier, RFQ, quotation, and file access. Private image downloads require authentication and return private, no-store cache headers.",
+          "Uploads validate JPG/PNG types and signatures with a 5 MB limit. The API includes input validation, Helmet headers, allowed-origin CORS, and request rate limits."
+        ]
+      },
+      {
+        "title": "Supplier quotation comparison logic",
+        "items": [
+          "At least two quotations are required. Grand totals equal quantity \u00d7 unit price summed across items, plus additional cost, minus discount. Ties remain visible.",
+          "Per-item analysis identifies every supplier tied at the lowest unit price. Split-award analysis sums those prices \u00d7 quantities; it excludes supplier-specific final charges and is not guaranteed savings.",
+          "Weighted scoring combines price, delivery, and supplier rating. Defaults are 60%, 25%, and 15%; weights must total 100%. Unrated suppliers use a neutral 3/5 rating. Missing delivery data blocks scoring when delivery has a positive weight."
+        ]
+      },
+      {
+        "title": "Challenges and solutions",
+        "items": [
+          "Comparable offers need matching line items. Server validation requires exactly one price for each RFQ item and rejects duplicate or unknown rows.",
+          "Files must survive backend restarts without becoming public. Production storage uses GridFS, with ownership checks before download.",
+          "Purchasing decisions need consistent state. RFQ-scoped decision locking coordinates quotation selection and supplier rating; only the selected supplier can be rated for a completed RFQ."
+        ]
+      },
+      {
+        "title": "Results and learning outcomes",
+        "items": [
+          "Delivered a connected supplier-to-decision workflow with explainable comparison modes and a deployed frontend and API.",
+          "The project developed my practical experience with React and Express integration, MongoDB data modeling, JWT authentication, and testing procurement workflows."
+        ]
+      }
+    ]
   }
 ]
 

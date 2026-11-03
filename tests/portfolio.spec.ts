@@ -7,7 +7,7 @@ const caseStudies = [
   { slug: 'caeloterra', title: 'CaeloTerra', proof: 'IN DEVELOPMENT' },
   { slug: 'unseen-jo', title: 'Unseen Jo', proof: 'Row Level Security (RLS)' },
   { slug: 'moodle-dashboard', title: 'Moodle Excel Management Dashboard', proof: 'PhpSpreadsheet' },
-  { slug: 'gym-management', title: 'Gym Management System', proof: 'Postman' },
+  { slug: 'fr-compare', title: 'FR Compare', proof: 'Weighted best-value evaluation' },
 ]
 const widths = [320, 375, 768, 1024, 1440]
 const violations = async (page: Page) => {
@@ -39,7 +39,7 @@ test('homepage, accessible menu, section indication, and truthful resume state',
   )
   await expect(page.getByRole('link', { name: /Connect on LinkedIn/ })).toHaveAttribute(
     'href',
-    'https://www.linkedin.com/in/ramez-al-maayah-b076ba425',
+    'https://www.linkedin.com/in/ramez-al-maayah-b076ba425/',
   )
   await expect(page.getByRole('link', { name: /PHONE/ })).toHaveAttribute(
     'href',

@@ -26,6 +26,8 @@ const devicon = [
   'python',
   'php',
   'nodejs',
+  'express',
+  'mongoose',
   'mongodb',
   'mysql',
   'microsoftsqlserver',

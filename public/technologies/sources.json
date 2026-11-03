@@ -321,5 +321,23 @@
     "source": "https://github.com/user-attachments/assets/00d6d1c3-72c4-4c2f-a664-69da13182ffc",
     "local": "/technologies/motion.png",
     "sha256": "1dde9678a5a164dd4795453de76444f6ed09e349b468c661aae88d6ff693aa6e"
+  },
+  {
+    "slug": "express",
+    "repository": "devicons/devicon",
+    "revision": "6a37858047b0e8d9c9c0e68f4a071fc410652e89",
+    "path": "icons/express/express-original.svg",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/express/express-original.svg",
+    "local": "/technologies/express.svg",
+    "sha256": "27ec7e3d21d59102c046a96277877abf78aa9d7ad244277345d9c395486d42d4"
+  },
+  {
+    "slug": "mongoose",
+    "repository": "devicons/devicon",
+    "revision": "6a37858047b0e8d9c9c0e68f4a071fc410652e89",
+    "path": "icons/mongoose/mongoose-original.svg",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/mongoose/mongoose-original.svg",
+    "local": "/technologies/mongoose.svg",
+    "sha256": "ff44cc80f119b5c4ae23bb4afeb4a1bca3c343565ad6e7cbf8cb3ea7e47db3d0"
   }
 ]

@@ -10,7 +10,7 @@ const escape = (value) =>
     .replaceAll('<', '&lt;')
     .replaceAll('>', '&gt;')
 // Optional real production origin. Never infer or invent a domain.
-const siteUrl = process.env.SITE_URL ? new URL(process.env.SITE_URL).origin : null
+const siteUrl = new URL(process.env.SITE_URL || 'https://ramez-dev-portfolio.netlify.app').origin
 for (const path of routes) {
   const { html, metadata } = render(path)
   let output = template
